@@ -41,12 +41,6 @@ vlans:
 prefixLength: 24
 ```
 
-hostnames: list of nodes to generate NNCPs for
-
-vlans: list of VLANs, each with an ID and IP pool
-
-prefixLength: CIDR prefix length for the static IPs
-
 
 Each NNCP configures:
 - bond.<vlan-id> interface on bond0
