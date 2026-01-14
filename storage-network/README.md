@@ -13,7 +13,7 @@ It is designed to assign VLANs and static IPs to a set of hostnames.
   - Static IPv4 addresses (from a pool defined per VLAN)
   - NodeSelector for the correct hostname
 - IPs are assigned in order from the VLAN IP list (deterministic, repeatable)
-- The NNCP name is formatted as: <hostname>-<vlan-id>
+- The NNCP name is formatted as: hostname-vlanid
 
 
 ---
