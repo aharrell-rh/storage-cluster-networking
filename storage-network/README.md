@@ -40,16 +40,15 @@ Example `values.yaml`:
 
     prefixLength: 24
 
-    EOF
-    ```
 
 Each NNCP configures:
 - bond.<vlan-id> interface on bond0
 - Static IP from the VLAN pool (assigned by index)
 - NodeSelector = hostname
 
+
+
 fill out your values file and run the following command <br>
 ```console
 helm template storage-network ./storage-network | oc apply -f -
 ```
-EOF
