@@ -48,5 +48,5 @@ Each NNCP configures:
 - Static IP from the VLAN pool (assigned by index)
 - NodeSelector = hostname
 
-fill out your values file and run the following command
+fill out your values file and run the following command <br>
 helm template storage-network ./storage-network | oc apply -f -
