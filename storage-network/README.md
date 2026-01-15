@@ -49,4 +49,7 @@ Each NNCP configures:
 - NodeSelector = hostname
 
 fill out your values file and run the following command <br>
+```console
 helm template storage-network ./storage-network | oc apply -f -
+```
+EOF
