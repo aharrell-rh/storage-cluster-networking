@@ -22,23 +22,26 @@ It is designed to assign VLANs and static IPs to a set of hostnames.
 
 Example `values.yaml`:
 
-```yaml
-hostnames:
-- node-01
-- node-02
+    ```console
+    hostnames:
+    - node-01
+    - node-02
 
-vlans:
-- id: 100
-  ips:
-    - 192.168.100.10
-    - 192.168.100.11
+    vlans:
+    - id: 100
+      ips:
+        - 192.168.100.10
+        - 192.168.100.11
 
-- id: 200
-  ips:
-    - 192.168.200.10
-    - 192.168.200.11
+    - id: 200
+      ips:
+        - 192.168.200.10
+        - 192.168.200.11
 
-prefixLength: 24
+    prefixLength: 24
+
+    EOF
+    ```
 
 Each NNCP configures:
 - bond.<vlan-id> interface on bond0
