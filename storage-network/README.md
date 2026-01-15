@@ -39,8 +39,6 @@ vlans:
     - 192.168.200.11
 
 prefixLength: 24
-```
-
 
 Each NNCP configures:
 - bond.<vlan-id> interface on bond0

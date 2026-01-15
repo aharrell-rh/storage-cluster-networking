@@ -5,7 +5,7 @@ Render a single NNCP for one hostname + one VLAN
 apiVersion: nmstate.io/v1
 kind: NodeNetworkConfigurationPolicy
 metadata:
-  name: {{ .hostname }}-{{ .vlan.id }}
+  name: {{ .hostname }}-vlan{{ .vlan.id }}
 spec:
   desiredState:
     interfaces:
