@@ -1,13 +1,13 @@
 # storage-network Helm Chart
 
-This Helm chart generates **NodeNetworkConfigurationPolicy (NNCP)** objects for nodes using NMState.  
+This Helm chart generates **NodeNetworkConfigurationPolicy (NNCP)** objects for nodes using NMState.
 It is designed to assign VLANs and static IPs to a set of hostnames.
 
 ---
 
 ## What it does
 
-- For each hostname in `values.yaml`, it generates an NNCP per VLAN.  
+- For each hostname in `values.yaml`, it generates an NNCP per VLAN.
 - Each NNCP configures:
   - A VLAN interface (`bond.<vlan-id>`) on top of `bond0`
   - Static IPv4 addresses (from a pool defined per VLAN)
@@ -47,3 +47,5 @@ Each NNCP configures:
 - Static IP from the VLAN pool (assigned by index)
 - NodeSelector = hostname
 
+fill out your values file and run the following command
+helm template storage-network ./storage-network | oc apply -f -

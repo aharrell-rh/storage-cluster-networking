@@ -1,10 +1,5 @@
 {{/*
 Render a single NNCP for one hostname + one VLAN
-Args (dict):
-  hostname: string
-  vlan: object (id, ips)
-  index: int
-  prefixLength: int
 */}}
 {{- define "storage-network.nncp" }}
 apiVersion: nmstate.io/v1
